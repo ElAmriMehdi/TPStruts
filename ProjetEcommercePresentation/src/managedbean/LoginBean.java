@@ -52,7 +52,13 @@ public class LoginBean {
             HttpSession session = SessionUtils.getSession();
             session.setAttribute("role", "admin");
                 return "admin";
-        } else {
+        }
+        else if (username.trim().equals("user") && password.trim().equals("user")) {
+                HttpSession session = SessionUtils.getSession();
+                session.setAttribute("role", "user");
+                    return "user";
+        }
+        else {
             FacesContext.getCurrentInstance().addMessage(
                     null,
                     new FacesMessage(FacesMessage.SEVERITY_WARN,

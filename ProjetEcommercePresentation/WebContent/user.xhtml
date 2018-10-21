@@ -9,10 +9,13 @@
     </h:head>
     <!-- Add 50px padding top to the body for the navbar -->
     <h:body style="padding-top: 55px; padding-bottom: 30px;">
-        <b:navBar brand="Acceuil" brandHref="/ProjetEcommercePresentation/index.xhtml" inverse="true" fixed="top">
+        <b:navBar brand="Acceuil" brandHref="/ProjetEcommercePresentation/index.xhtml" 
+        inverse="true" fixed="top" brand-align="right">
         <b:navbarLinks>
-    <b:navLink value="Gestion des articles" href="#"></b:navLink>
-    <b:navLink value="Gestion des utilisateur" href="#"></b:navLink>
+    <b:navLink value="Chercher un article " href="#" icon-awesome="fa-search"></b:navLink>
+    <b:navLink    icon-awesome="fa-cart-plus " 
+            value="Mon panier"
+            look="info"   href="#"></b:navLink>
   </b:navbarLinks>
             <h:form styleClass="navbar-form navbar-right">
                  <div class="form-group">
@@ -23,7 +26,7 @@
         </b:navBar>
         <b:jumbotron>
             <b:container>
-                <h1>Admin Page</h1>
+                <h1>User Page</h1>
             </b:container>
 
         </b:jumbotron>
