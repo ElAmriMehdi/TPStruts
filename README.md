@@ -4,3 +4,4 @@
 * Go to http://localhost:8080/ProjetEcommercePresentation/faces/home.xhtml
 
 ## Work in progress
+# ECommerce-JSF-EJB-PrimeFaces-J2EE
